@@ -32,8 +32,15 @@ function App() {
   }
 
   const close = () => {
-    if (window.confirm('Are you sure you want to close the tab?')) {
+    const confirmation = window.confirm(
+      'Are you sure you want to close the tab?'
+    )
+
+    if (confirmation) {
       window.close()
+    } else {
+      inputRef.current?.removeAttribute('disabled')
+      inputRef.current?.focus()
     }
   }
 
