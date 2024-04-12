@@ -137,11 +137,9 @@ function App() {
   }
 
   useEffect(() => {
-    return () => {
-      if (!isMounted.current) {
-        executeCommand('banner')
-        isMounted.current = true
-      }
+    if (!isMounted.current) {
+      executeCommand('banner')
+      isMounted.current = true
     }
   }, [])
 
