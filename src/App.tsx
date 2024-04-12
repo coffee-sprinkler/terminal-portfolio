@@ -39,8 +39,10 @@ function App() {
     if (confirmation) {
       window.close()
     } else {
-      inputRef.current?.removeAttribute('disabled')
-      inputRef.current?.focus()
+      if (inputRef.current) {
+        inputRef.current.removeAttribute('disabled')
+        inputRef.current.focus()
+      }
     }
   }
 

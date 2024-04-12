@@ -64,7 +64,6 @@ const Prompt: React.FC<PromptProps> = ({ onCommand, inputRef, history }) => {
             onChange={handleChange}
             onKeyDown={handleKeyPress}
             ref={inputRef}
-            disabled={history.length > 0} // Disable input if history is not empty
           />
         </p>
       </div>
