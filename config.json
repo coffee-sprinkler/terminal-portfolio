@@ -1,0 +1,48 @@
+{
+  "ascii": [
+    "██████╗  ██████╗ ████████╗██████╗ ███████╗███╗   ██╗███████╗",
+    "██╔══██╗██╔═══██╗╚══██╔══╝██╔══██╗██╔════╝████╗  ██║╚══███╔╝",
+    "██║  ██║██║   ██║   ██║   ██║  ██║█████╗  ██╔██╗ ██║  ███╔╝ ",
+    "██║  ██║██║   ██║   ██║   ██║  ██║██╔══╝  ██║╚██╗██║ ███╔╝  ",
+    "██████╔╝╚██████╔╝   ██║   ██████╔╝███████╗██║ ╚████║███████╗",
+    "╚═════╝  ╚═════╝    ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝"
+  ],
+  "about": [
+    "This app is created by dotdenz.",
+    "Dennis is a Web Developers pecializing in WordPress websites.",
+    "In his leisure hours, he engages primarily in developing applications using technologies such as:",
+    "[React, Vue, Angular, .NET, etc]"
+  ],
+  "commands": [
+    "about",
+    "projects",
+    "whoami",
+    "github",
+    "banner",
+    "help",
+    "clear"
+  ],
+  "github": [
+    "Redirecting to GitHub...",
+    "https://github.com/coffee-sprinkler/"
+  ],
+  "help": [
+    ["'about'", "Who made this website?"],
+    ["'projects'", "Hopefully I'll add something interesting."],
+    ["'whoami'", "Do you think I know?"],
+    ["'github'", "Go to the github."],
+    ["'banner'", "Display banner."],
+    ["'help'", "Help list."],
+    ["'clear'", "Clear the terminal."]
+  ],
+  "projects": [],
+  "whoami": [
+    "In lines of code vast,",
+    "Worlds within, yet unseen paths,",
+    "Creation whispers.",
+    "",
+    "In the syntax's dance,",
+    "Echoes linger, a silent chance,",
+    "<span class='command'>Who am I</span>, they ask."
+  ]
+}

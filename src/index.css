@@ -1,0 +1,122 @@
+[data-theme='night-owl'] {
+  --status-background: #7e57c2cc;
+  --background-color: #011627;
+  --font-color: #d6deeb;
+  --prompt-color: #ef5350;
+  --user-color: #e2b93d;
+  --domain-color: #21c7a8;
+  --font-size: 0.875rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Fira Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+main {
+  --margin: 8px;
+  border: 2px solid #7e57c2cc;
+  border-radius: 0.5rem;
+  height: calc(100vh - (2 * var(--margin)));
+  padding-bottom: calc(2 * var(--margin));
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.header {
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+
+  .top {
+    background-color: var(--status-background);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding: 0.5rem;
+  }
+
+  img {
+    filter: invert(1);
+  }
+
+  .bar {
+    background-color: var(--status-background);
+    height: 1px;
+    margin-top: 2px;
+  }
+
+  .bar.first {
+    height: 3px;
+    margin-top: 1px;
+  }
+}
+
+pre {
+  margin-block: 0;
+}
+
+p {
+  display: block;
+  margin-block: 0;
+  font-size: var(--font-size);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 0.5s steps(15, end);
+}
+
+input {
+  background-color: var(--background-color);
+  border: none;
+  caret-color: var(--font-color);
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size);
+  color: var(--prompt-color);
+  letter-spacing: 1px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.terminal,
+.prompt {
+  margin-inline: calc(2 * var(--margin));
+}
+
+.user {
+  color: var(--user-color);
+}
+
+.domain {
+  color: var(--domain-color);
+}
+
+.command {
+  color: var(--prompt-color);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
